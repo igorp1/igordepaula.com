@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+.center-panel{
+	width: 300px;
+	height: 150px;
+	position: absolute;
+	left: 50%;
+	top: 50%; 
+	margin-left: -150px;
+	margin-top: -150px;
+	text-align: center;
+}
+body{
+	font-family: 'Roboto Mono', monospace;
+	background-color: #25252c;
+	color: #fefefe;
+}
+a{
+	text-decoration: underline;
+	cursor: pointer;
+	color: #fefefe
+}
+a:focus, a:hover{
+	font-weight: 600
+}
+a:active{
+	color: tomato;
+	font-weight: 600
+}
+a:visited{
+	color: #fefefe
+}
+
+.text-elevation-1{
+	text-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
