@@ -69,7 +69,7 @@ document.addEventListener('keydown', function(event) {
 			window.location.replace('./cpanel');
 			break;			
 		case 'R':
-			window.location.replace('./_res/docs/IgordePaula_resume.pdf');
+			window.location.replace('./_res/docs/idp_resume.pdf');
 			break;			
 		case 'E':
 			copyEmailToClipboard(document.getElementById('email-link'));
