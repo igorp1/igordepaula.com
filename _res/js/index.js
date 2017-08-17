@@ -4,19 +4,21 @@ var lastIndxPickedForRandomBackground = -1;
 /// FUNCTIONS
 
 function addRandomBackground(){
-	var links = [
-		"https://media1.giphy.com/media/wFbI8gwCfCxeo/200.webp#5-grid1",
-		"https://media.giphy.com/media/6ON0E11YbeR6U/giphy.gif",
-		"https://media3.giphy.com/media/VouwN9LlIL3JC/giphy.gif"
+	var gif_links = [
+		"http://igordepaula.com/_res/img/gifs/batman.gif",
+		"http://igordepaula.com/_res/img/gifs/franky.gif",
+		"http://igordepaula.com/_res/img/gifs/meeseeks.gif",
+		"http://igordepaula.com/_res/img/gifs/rick.gif",
+		"http://igordepaula.com/_res/img/gifs/schwifty.gif"
 	];
 	
-	var indx = Math.floor(Math.random() * links.length);
+	var indx = Math.floor(Math.random() * gif_links.length);
 	
 	while(indx == lastIndxPickedForRandomBackground){
-		indx = Math.floor(Math.random() * links.length);
+		indx = Math.floor(Math.random() * gif_links.length);
 	}
 	lastIndxPickedForRandomBackground = indx;
-	var bk_url = links[indx]
+	var bk_url = gif_links[indx]
 	document.body.style.backgroundImage = 'url(' + bk_url + ')';
 }
 
